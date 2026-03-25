@@ -1,6 +1,6 @@
 import { Box, Chip, Typography } from "@mui/material";
 
-const SongCard = ({ image, title, follows }) => {
+const SongCard = ({ image, title, follows, isLike = false }) => {
   return (
     <Box>
       {/* Card container */}
@@ -26,7 +26,7 @@ const SongCard = ({ image, title, follows }) => {
         {/* White section */}
         <Box sx={{ px: "8px", py: "16px" }}>
           <Chip
-            label={`${follows} Follows`}
+            label={`${follows} ` + (isLike ? "Likes" : "Follows")}
             sx={{
               bgcolor: "black",
               color: "white",
