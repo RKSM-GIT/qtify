@@ -1,4 +1,3 @@
-// src/components/Section/Section.jsx
 import {
   Box,
   Card,
